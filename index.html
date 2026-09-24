@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanessa Berton | Coach e Mentora</title>
+<meta name="description" content="Vanessa Berton, coach e mentora. Conheça sua história, o grupo de mentoria, palestras e o ebook.">
+<meta property="og:title" content="Vanessa Berton | Coach e Mentora">
+<meta property="og:description" content="Conheça a história da Vanessa, o grupo de mentoria, palestras e o ebook.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cafe:#2E2019; --marrom:#4A3326; --caramelo:#A9794F; --bege:#E8DCCB; --creme:#F7F1E8; --branco:#FFFCF7;
+    --texto:#2E2019; --texto-suave:#6B5647;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;font-weight:300;color:var(--texto);background:var(--creme);line-height:1.7}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+  header{background:var(--cafe);color:var(--bege)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;letter-spacing:.5px;text-decoration:none;color:var(--bege)}
+  .tag{font-size:.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--caramelo)}
+
+  .sobre{padding:72px 0}
+  .sobre .wrap{display:grid;grid-template-columns:minmax(260px,400px) 1fr;gap:56px;align-items:center}
+  .foto{aspect-ratio:1/1;border-radius:16px;overflow:hidden;background:var(--bege);display:flex;align-items:center;justify-content:center;border:1px solid #d9c7ae}
+  .foto img{width:100%;height:100%;object-fit:cover}
+  .foto .iniciais{font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--caramelo)}
+  .eyebrow{font-size:.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--caramelo);font-weight:500}
+  h1,h2{font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--cafe);line-height:1.15}
+  h1{font-size:clamp(2.4rem,5vw,3.4rem);margin:8px 0 20px}
+  .sobre p{color:var(--texto-suave);margin-bottom:16px;font-size:1.02rem}
+
+  .caminhos{background:var(--branco);padding:72px 0;border-top:1px solid var(--bege)}
+  .caminhos h2{font-size:clamp(2rem,4vw,2.6rem);text-align:center;margin:8px 0 40px}
+  .caminhos .eyebrow{display:block;text-align:center}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{display:flex;flex-direction:column;background:var(--creme);border:1px solid var(--bege);border-radius:16px;padding:32px 26px;text-decoration:none;transition:transform .2s,box-shadow .2s,border-color .2s}
+  .card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:0 12px 28px rgba(46,32,25,.12);border-color:var(--caramelo);outline:none}
+  .icone{width:52px;height:52px;border-radius:50%;background:var(--cafe);display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  .icone svg{width:24px;height:24px;stroke:var(--bege);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .card h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--cafe);margin-bottom:10px;line-height:1.2}
+  .card p{color:var(--texto-suave);font-size:.95rem;flex:1}
+  .preco{font-weight:500;color:var(--marrom);margin-top:18px;font-size:1rem}
+  .botao{display:inline-block;margin-top:16px;padding:12px 20px;background:var(--cafe);color:var(--bege);border-radius:40px;font-size:.9rem;font-weight:500;text-align:center}
+  .card:hover .botao{background:var(--marrom)}
+
+  footer{background:var(--cafe);color:var(--bege);padding:32px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--bege);opacity:.8}
+
+  /* Textos provisórios: remova a classe "ph" quando o texto final entrar */
+  .ph{background:rgba(169,121,79,.12);outline:1px dashed var(--caramelo);border-radius:4px;padding:2px 4px}
+
+  @media (max-width:860px){
+    .sobre .wrap{grid-template-columns:1fr;gap:36px}
+    .foto{max-width:340px;margin:0 auto;width:100%}
+    .cards{grid-template-columns:1fr}
+    .sobre,.caminhos{padding:52px 0}
+  }
+  @media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">Vanessa Berton</a>
+    <span class="tag">Coach e Mentora</span>
+  </div>
+</header>
+
+<main>
+  <!-- ETAPA 1: QUEM SOU EU -->
+  <section class="sobre" id="quem-sou-eu">
+    <div class="wrap">
+      <div class="foto">
+        <!-- EDITAR: troque a linha abaixo por <img src="foto-vanessa.jpg" alt="Foto de Vanessa Berton"> -->
+        <span class="iniciais" aria-hidden="true">VB</span>
+      </div>
+      <div>
+        <span class="eyebrow">Quem sou eu</span>
+        <h1>Vanessa Berton</h1>
+        <!-- EDITAR: texto da história da Vanessa -->
+        <p class="ph">[Parágrafo 1 da história da Vanessa: quem ela é e de onde vem.]</p>
+        <p class="ph">[Parágrafo 2: formação, experiência e o que a levou a trabalhar como coach e mentora.]</p>
+        <p class="ph">[Parágrafo 3: como ela trabalha hoje e para quem.]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPA 2: OS 3 CARDS -->
+  <section class="caminhos" id="caminhos">
+    <div class="wrap">
+      <span class="eyebrow">Por onde começar</span>
+      <h2>Escolha como quer estar perto</h2>
+
+      <div class="cards">
+        <!-- Card 1: Grupo -->
+        <a class="card" href="grupo.html">
+          <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+          <h3>Grupo de mentoria no WhatsApp</h3>
+          <p class="ph">[Uma frase sobre o propósito do grupo.]</p>
+          <span class="preco">R$ 97 por mês</span>
+          <span class="botao">Conhecer o grupo</span>
+        </a>
+
+        <!-- Card 2: Palestra. EDITAR: link da página do evento -->
+        <a class="card" href="#" target="_blank" rel="noopener noreferrer">
+          <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></svg></div>
+          <h3 class="ph">[Nome da palestra]</h3>
+          <p class="ph">[Evento, cidade e data.]</p>
+          <span class="botao">Ver detalhes do evento</span>
+        </a>
+
+        <!-- Card 3: Ebook. EDITAR: link do checkout da Kiwify -->
+        <a class="card" href="#" target="_blank" rel="noopener noreferrer">
+          <div class="icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M8 7h7"/></svg></div>
+          <h3 class="ph">[Título do ebook]</h3>
+          <p class="ph">[Uma frase sobre o que a pessoa encontra no ebook.]</p>
+          <span class="preco">R$ 37</span>
+          <span class="botao">Quero o ebook</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vanessa Berton</span>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+</footer>
+
+</body>
+</html>

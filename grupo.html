@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grupo de mentoria | Vanessa Berton</title>
+<meta name="description" content="Grupo de mentoria da Vanessa Berton no WhatsApp. Assinatura mensal de R$ 97.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cafe:#2E2019; --marrom:#4A3326; --caramelo:#A9794F; --bege:#E8DCCB; --creme:#F7F1E8; --branco:#FFFCF7;
+    --texto:#2E2019; --texto-suave:#6B5647;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;font-weight:300;color:var(--texto);background:var(--creme);line-height:1.7}
+  a{color:inherit}
+  .wrap{max-width:820px;margin:0 auto;padding:0 20px}
+
+  header{background:var(--cafe);color:var(--bege)}
+  header .wrap{max-width:1080px;display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;text-decoration:none;color:var(--bege)}
+  .voltar{font-size:.85rem;color:var(--bege);opacity:.85;text-decoration:none}
+  .voltar:hover{opacity:1;text-decoration:underline}
+
+  .topo{padding:60px 0 28px;text-align:center}
+  .eyebrow{font-size:.8rem;letter-spacing:3px;text-transform:uppercase;color:var(--caramelo);font-weight:500}
+  h1,h2{font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--cafe);line-height:1.15}
+  h1{font-size:clamp(2.2rem,5vw,3.2rem);margin:8px 0 14px}
+  .topo p{color:var(--texto-suave)}
+
+  .video{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:var(--cafe);margin:12px 0 48px}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video .aviso{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--bege)}
+  .video .aviso svg{width:56px;height:56px;stroke:var(--caramelo);fill:none;stroke-width:1.4}
+
+  .bloco{background:var(--branco);border:1px solid var(--bege);border-radius:16px;padding:36px 32px;margin-bottom:28px}
+  .bloco h2{font-size:1.9rem;margin-bottom:16px}
+  .bloco ul{list-style:none}
+  .bloco li{padding:10px 0 10px 30px;position:relative;color:var(--texto-suave);border-bottom:1px solid var(--bege)}
+  .bloco li:last-child{border-bottom:0}
+  .bloco li::before{content:"";position:absolute;left:4px;top:19px;width:10px;height:10px;border-radius:50%;background:var(--caramelo)}
+
+  .oferta{background:var(--cafe);color:var(--bege);border-radius:16px;padding:40px 32px;text-align:center;margin-bottom:28px}
+  .oferta h2{color:var(--bege);font-size:2rem}
+  .valor{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:600;margin:8px 0 2px}
+  .valor small{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:300}
+  .botao{display:inline-block;margin-top:22px;padding:15px 34px;background:var(--caramelo);color:var(--branco);border-radius:40px;font-weight:500;text-decoration:none;transition:background .2s}
+  .botao:hover,.botao:focus-visible{background:#8f633f}
+  .seguro{margin-top:18px;font-size:.82rem;opacity:.8;display:flex;justify-content:center;align-items:center;gap:8px}
+  .seguro svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8}
+
+  .faq details{border-bottom:1px solid var(--bege);padding:14px 0}
+  .faq details:last-child{border-bottom:0}
+  .faq summary{cursor:pointer;font-weight:500;color:var(--cafe)}
+  .faq details p{color:var(--texto-suave);margin-top:8px}
+
+  footer{background:var(--cafe);color:var(--bege);padding:32px 0;font-size:.85rem;margin-top:48px}
+  footer .wrap{max-width:1080px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--bege);opacity:.8}
+
+  .ph{background:rgba(169,121,79,.12);outline:1px dashed var(--caramelo);border-radius:4px;padding:2px 4px}
+  .oferta .ph{background:rgba(232,220,203,.12);outline-color:var(--bege)}
+
+  @media (max-width:600px){.bloco,.oferta{padding:28px 20px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">Vanessa Berton</a>
+    <a class="voltar" href="./">Voltar ao início</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="topo">
+    <span class="eyebrow">Grupo de mentoria</span>
+    <h1 class="ph">[Nome do grupo]</h1>
+    <p class="ph">[Uma frase sobre o propósito do grupo.]</p>
+  </section>
+
+  <!-- VÍDEO. EDITAR: quando o vídeo estiver no YouTube (não listado), apague a div "aviso" e use:
+       <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="Vídeo do grupo de mentoria" allow="encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe> -->
+  <div class="video">
+    <div class="aviso">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg>
+      <span>Vídeo em produção</span>
+    </div>
+  </div>
+
+  <section class="bloco">
+    <h2>O que acontece no grupo</h2>
+    <ul>
+      <li class="ph">[Item 1: o que a pessoa recebe ou faz no grupo]</li>
+      <li class="ph">[Item 2]</li>
+      <li class="ph">[Item 3]</li>
+      <li class="ph">[Item 4]</li>
+    </ul>
+  </section>
+
+  <section class="bloco">
+    <h2>Para quem é</h2>
+    <p class="ph">[Descrição de quem se beneficia do grupo, com as palavras da Vanessa.]</p>
+  </section>
+
+  <section class="oferta" id="assinar">
+    <h2>Assinatura mensal</h2>
+    <div class="valor">R$ 97 <small>por mês</small></div>
+    <p>Cancele quando quiser.</p>
+    <!-- EDITAR: link do checkout de assinatura da Kiwify -->
+    <a class="botao" href="#" target="_blank" rel="noopener noreferrer">Quero entrar no grupo</a>
+    <div class="seguro">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+      Pagamento processado com segurança pela Kiwify
+    </div>
+  </section>
+
+  <section class="bloco faq">
+    <h2>Dúvidas frequentes</h2>
+    <details>
+      <summary>Como recebo o acesso ao grupo?</summary>
+      <p>Depois da confirmação do pagamento, você recebe por e-mail o link para entrar no grupo do WhatsApp.</p>
+    </details>
+    <details>
+      <summary>Quais formas de pagamento são aceitas?</summary>
+      <p>Cartão de crédito e Pix, pelo checkout seguro da Kiwify.</p>
+    </details>
+    <details>
+      <summary>Como cancelo a assinatura?</summary>
+      <p>Você pode cancelar a qualquer momento pela sua conta na Kiwify. O acesso ao grupo segue até o fim do período já pago.</p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vanessa Berton</span>
+    <a href="privacidade.html">Política de privacidade</a>
+  </div>
+</footer>
+
+</body>
+</html>
