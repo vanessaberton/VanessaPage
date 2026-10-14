@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do piloto automático à presença | Ebook de Vanessa Berton</title>
+<meta name="description" content="Um guia prático de inteligência emocional para quem se cansou de viver reagindo. 4 ferramentas e um plano de 21 dias. Ebook de Vanessa Berton, R$ 37.">
+<meta property="og:title" content="Do piloto automático à presença">
+<meta property="og:description" content="Um guia prático de inteligência emocional para quem se cansou de viver reagindo.">
+<meta property="og:image" content="capa-ebook.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cafe:#3B1F0E; --marrom:#6B3A21; --caramelo:#A0673A; --dourado:#C9A87C; --bege:#E8D5B7; --creme:#F7F0E6; --branco:#FFFCF7;
+    --texto:#3B1F0E; --texto-suave:#6B5242; --terracota:#B9603F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins',system-ui,sans-serif;font-weight:300;color:var(--texto);background:var(--creme);line-height:1.7}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .estreito{max-width:760px}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--cafe);line-height:1.15}
+  h2{font-size:clamp(2rem,4.2vw,2.7rem);margin-bottom:20px}
+  h3{font-size:1.45rem;margin-bottom:6px}
+  .eyebrow{display:block;font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--caramelo);font-weight:500;margin-bottom:8px}
+  section{padding:72px 0}
+  p{margin-bottom:14px}
+  .suave{color:var(--texto-suave)}
+
+  header{background:var(--cafe);color:var(--bege)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;text-decoration:none;color:var(--creme)}
+  .voltar{font-size:.85rem;color:var(--bege);text-decoration:none;opacity:.85}
+  .voltar:hover{opacity:1;text-decoration:underline}
+
+  .botao{display:inline-block;padding:16px 36px;background:var(--caramelo);color:var(--branco);border-radius:40px;font-weight:500;font-size:1rem;text-decoration:none;transition:background .2s}
+  .botao:hover,.botao:focus-visible{background:#86522c}
+  .selo{display:flex;align-items:center;gap:8px;font-size:.85rem;color:var(--texto-suave);margin-top:14px}
+  .selo svg{width:18px;height:18px;flex:0 0 18px;stroke:var(--caramelo);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+  /* Abertura */
+  .abertura{padding:64px 0 72px}
+  .abertura .wrap{display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:64px;align-items:center}
+  .capa img{width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 22px 50px rgba(59,31,14,.22),0 4px 10px rgba(59,31,14,.12)}
+  .abertura h1{font-size:clamp(2.6rem,5.4vw,3.8rem);margin:6px 0 16px}
+  .abertura .sub{font-size:1.15rem;color:var(--texto-suave);margin-bottom:22px}
+  .fatos{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.88rem;color:var(--marrom);margin-bottom:28px}
+  .fatos span{display:flex;align-items:center;gap:6px}
+  .fatos span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--caramelo)}
+  .preco{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:600;color:var(--cafe);line-height:1;margin-bottom:18px}
+  .preco small{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:300;color:var(--texto-suave);margin-left:6px}
+
+  /* Identificação */
+  .identificacao{background:var(--branco);border-top:1px solid var(--bege);border-bottom:1px solid var(--bege)}
+  .perguntas{list-style:none;margin:8px 0 26px}
+  .perguntas li{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;color:var(--cafe);line-height:1.35;padding:14px 0;border-bottom:1px solid var(--bege)}
+  .perguntas li:last-child{border-bottom:0}
+  .destaque{background:var(--cafe);color:var(--creme);border-radius:16px;padding:28px 30px;margin:28px 0;font-family:'Cormorant Garamond',serif;font-size:1.55rem;line-height:1.35;font-weight:500}
+
+  /* Sinais */
+  .sinais{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:10px}
+  .sinal{background:var(--branco);border:1px solid var(--bege);border-radius:14px;padding:22px}
+  .sinal .num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--dourado);line-height:1}
+  .sinal h3{font-size:1.3rem;margin:6px 0}
+  .sinal p{font-size:.93rem;color:var(--texto-suave);margin:0}
+
+  /* Conteúdo */
+  .conteudo{background:var(--branco);border-top:1px solid var(--bege);border-bottom:1px solid var(--bege)}
+  .lista-conteudo{list-style:none;display:grid;gap:12px;margin:8px 0 0}
+  .lista-conteudo li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;background:var(--creme);border-radius:12px}
+  .lista-conteudo svg{width:22px;height:22px;flex:0 0 22px;margin-top:2px;stroke:var(--caramelo);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  /* Ferramentas */
+  .ferramentas{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .ferramenta{background:var(--branco);border:1px solid var(--bege);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+  .ferramenta .tempo{align-self:flex-start;font-size:.75rem;font-weight:500;letter-spacing:1px;text-transform:uppercase;background:var(--bege);color:var(--cafe);padding:3px 10px;border-radius:20px;margin-bottom:12px}
+  .ferramenta p{font-size:.93rem;color:var(--texto-suave);margin:0}
+  .ferramenta .quando{font-size:.85rem;color:var(--marrom);font-weight:400;margin-top:12px}
+
+  /* Plano */
+  .plano{background:var(--cafe);color:var(--creme)}
+  .plano h2,.plano h3{color:var(--creme)}
+  .plano .eyebrow{color:var(--dourado)}
+  .plano .intro{color:var(--bege);max-width:680px}
+  .semanas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+  .semana{border:1px solid rgba(201,168,124,.45);border-radius:14px;padding:24px}
+  .semana .dias{font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--dourado);font-weight:500}
+  .semana h3{font-size:1.7rem;margin:4px 0 12px}
+  .semana ul{list-style:none;display:grid;gap:10px}
+  .semana li{font-size:.92rem;color:var(--bege);padding-left:16px;position:relative}
+  .semana li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--dourado)}
+  .regras{margin-top:26px;font-size:.92rem;color:var(--bege)}
+
+  /* Sumário */
+  .sumario ol{list-style:none;columns:2;column-gap:40px;margin-top:6px}
+  .sumario li{break-inside:avoid;padding:9px 0;border-bottom:1px solid var(--bege);font-size:.95rem;color:var(--texto-suave)}
+  .sumario li b{font-weight:500;color:var(--cafe)}
+
+  /* Autora */
+  .autora{background:var(--branco);border-top:1px solid var(--bege);border-bottom:1px solid var(--bege)}
+  .autora .wrap{display:grid;grid-template-columns:minmax(200px,300px) 1fr;gap:48px;align-items:center}
+  .autora img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:16px;display:block}
+  .autora p{color:var(--texto-suave)}
+
+  /* Oferta */
+  .oferta-final{padding:80px 0}
+  .caixa{background:var(--branco);border:1px solid var(--dourado);border-radius:20px;padding:44px 36px;text-align:center;max-width:620px;margin:0 auto}
+  .caixa h2{margin-bottom:10px}
+  .caixa ul{list-style:none;text-align:left;display:grid;gap:10px;margin:22px auto 26px;max-width:420px}
+  .caixa li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;color:var(--texto-suave)}
+  .caixa li svg{width:20px;height:20px;flex:0 0 20px;margin-top:3px;stroke:var(--caramelo);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .caixa .preco{font-size:3.2rem;margin-bottom:20px}
+  .caixa .selo{justify-content:center}
+
+  /* Dúvidas */
+  .faq details{border-bottom:1px solid var(--bege);padding:16px 0}
+  .faq summary{cursor:pointer;font-weight:500;color:var(--cafe);font-size:1rem}
+  .faq details p{color:var(--texto-suave);margin:10px 0 0}
+
+  .aviso{font-size:.82rem;color:var(--texto-suave);border-top:1px solid var(--bege);padding:28px 0 8px}
+
+  footer{background:var(--cafe);color:var(--bege);padding:32px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  footer a{color:var(--bege);opacity:.85}
+
+  @media (max-width:860px){
+    section{padding:52px 0}
+    .abertura .wrap,.autora .wrap{grid-template-columns:1fr;gap:36px}
+    .capa{max-width:300px;margin:0 auto;width:100%}
+    .autora img{max-width:280px;margin:0 auto}
+    .semanas{grid-template-columns:1fr}
+    .sumario ol{columns:1}
+    .caixa{padding:34px 22px}
+  }
+  @media (prefers-reduced-motion:reduce){.botao{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">Vanessa Berton</a>
+    <a class="voltar" href="./">Voltar ao início</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ABERTURA -->
+  <section class="abertura">
+    <div class="wrap">
+      <div class="capa">
+        <img src="capa-ebook.jpg" alt="Capa do ebook Do piloto automático à presença, de Vanessa Berton dos Santos" width="640" height="719">
+      </div>
+      <div>
+        <span class="eyebrow">Ebook</span>
+        <h1>Do piloto automático à presença</h1>
+        <p class="sub">Um guia prático de inteligência emocional para quem se cansou de viver reagindo.</p>
+        <div class="fatos">
+          <span>49 páginas em PDF</span>
+          <span>4 ferramentas práticas</span>
+          <span>Plano de 21 dias</span>
+        </div>
+        <div class="preco">R$ 37 <small>pagamento único</small></div>
+        <!-- EDITAR: link do checkout da Hotmart -->
+        <a class="botao" href="#" target="_blank" rel="noopener noreferrer">Quero o ebook</a>
+        <div class="selo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          Compra segura pela Hotmart, com garantia de reembolso.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTIFICAÇÃO (texto da introdução do ebook) -->
+  <section class="identificacao">
+    <div class="wrap estreito">
+      <span class="eyebrow">Talvez você se reconheça aqui</span>
+      <ul class="perguntas">
+        <li>Você já chegou em casa dirigindo e não se lembra de boa parte do caminho?</li>
+        <li>Já discutiu com alguém e, minutos depois, nem sabia direito por que tinha reagido daquele jeito?</li>
+        <li>Já terminou um dia inteiro de trabalho com a sensação estranha de que "passou por cima" da própria vida, sem realmente estar nela?</li>
+      </ul>
+      <p class="suave">Isso tem nome: piloto automático, o modo como o cérebro humano foi construído para economizar energia, sem qualquer relação com força de vontade, preguiça ou disciplina.</p>
+      <p class="suave">Ele é útil para escovar os dentes, dirigir uma rota conhecida, andar de bicicleta. O problema é quando ele assume o comando das partes da vida que mais importam: como você trata quem você ama, como você reage sob pressão, como você se relaciona com o que sente.</p>
+      <div class="destaque">Você não decide a maior parte do seu dia. Você reage a ele. E existe uma diferença enorme entre viver e reagir.</div>
+      <p class="suave">Presença e inteligência emocional são habilidades. E como toda habilidade, podem ser treinadas, com ferramentas simples, práticas e realistas para uma vida corrida.</p>
+    </div>
+  </section>
+
+  <!-- 5 SINAIS -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">Capítulo 3 do ebook</span>
+      <h2>Os 5 sinais de que o piloto automático está no comando</h2>
+      <div class="sinais">
+        <div class="sinal"><div class="num">1</div><h3>Você reage antes de perceber que reagiu</h3><p>O tom de voz, a mensagem enviada no impulso, o "sim" automático já aconteceram antes de você observar o que estava sentindo.</p></div>
+        <div class="sinal"><div class="num">2</div><h3>Seus dias parecem iguais, mesmo quando não são</h3><p>As conversas, as refeições e os trajetos se misturam numa névoa só.</p></div>
+        <div class="sinal"><div class="num">3</div><h3>Você nomeia mal as próprias emoções</h3><p>"Estou bem", "tô sem energia", "tá tudo normal" costumam ser respostas de piloto automático.</p></div>
+        <div class="sinal"><div class="num">4</div><h3>Corpo tenso sem motivo aparente</h3><p>Ombros travados, mandíbula cerrada, respiração curta. O corpo, em geral, sabe antes da mente.</p></div>
+        <div class="sinal"><div class="num">5</div><h3>Sensação de estar "vivendo por obrigação"</h3><p>Cumprir tabela sem realmente sentir que está escolhendo essa vida.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ VAI ENCONTRAR -->
+  <section class="conteudo">
+    <div class="wrap estreito">
+      <span class="eyebrow">O que você vai encontrar</span>
+      <h2>Um guia curto e prático</h2>
+      <p class="suave">Nenhum capítulo exige retiro, silêncio ou horas livres, apenas alguns minutos e disposição para começar pequeno. Ao final da leitura, você vai ter:</p>
+      <ul class="lista-conteudo">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Clareza sobre o que é o piloto automático e por que ele comanda boa parte das suas reações.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Os 5 sinais para reconhecer quando você está distante de si.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Os 4 pilares da inteligência emocional, explicados de forma simples e aplicável.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>4 ferramentas práticas para regular emoções no dia a dia: o Mapa das Emoções, a Pausa Consciente, o Diário de Presença e o Minuto de Agradecimento.</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span>Um plano de 21 dias para transformar presença em hábito, passo a passo.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4 FERRAMENTAS -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">As ferramentas</span>
+      <h2>Quatro práticas que cabem numa vida corrida</h2>
+      <div class="ferramentas">
+        <div class="ferramenta"><span class="tempo">3 minutos</span><h3>Mapa das Emoções</h3><p>Pare, respire e nomeie com precisão o que sente. Anote: "Sinto [emoção] porque [situação]".</p><span class="quando">2 vezes ao dia, manhã e noite</span></div>
+        <div class="ferramenta"><span class="tempo">90 segundos</span><h3>Pausa Consciente</h3><p>Perceba o gatilho, nomeie a emoção, respire (4 segundos inspirando, 4 segurando, 6 soltando) e só então decida.</p><span class="quando">Quando uma emoção intensa estiver subindo</span></div>
+        <div class="ferramenta"><span class="tempo">Poucos minutos</span><h3>Diário de Presença</h3><p>Responda às 3 perguntas fixas em poucas linhas e, depois de 1 semana, observe os padrões.</p><span class="quando">No fim do dia</span></div>
+        <div class="ferramenta"><span class="tempo">1 minuto</span><h3>Minuto de Agradecimento</h3><p>Anote pelo menos 3 gratidões específicas, diferentes das do dia anterior.</p><span class="quando">Toda noite, antes de dormir</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANO DE 21 DIAS -->
+  <section class="plano">
+    <div class="wrap">
+      <span class="eyebrow">Capítulo 12 do ebook</span>
+      <h2>O plano de 21 dias</h2>
+      <p class="intro">Ler sobre presença não muda a vida, praticar sim. O plano organiza as quatro ferramentas em uma progressão simples de 21 dias, com um checklist para marcar cada prática concluída.</p>
+      <div class="semanas">
+        <div class="semana">
+          <span class="dias">Dias 1 a 7</span>
+          <h3>Percepção</h3>
+          <ul>
+            <li>Mapa das Emoções 2 vezes ao dia, manhã e noite.</li>
+            <li>Meta da semana: apenas notar. Ainda não é hora de mudar nada.</li>
+          </ul>
+        </div>
+        <div class="semana">
+          <span class="dias">Dias 8 a 14</span>
+          <h3>Regulação</h3>
+          <ul>
+            <li>Continue o Mapa das Emoções e adicione a Pausa Consciente sempre que notar uma emoção intensa subindo.</li>
+            <li>Meta da semana: usar a Pausa Consciente pelo menos uma vez ao dia.</li>
+          </ul>
+        </div>
+        <div class="semana">
+          <span class="dias">Dias 15 a 21</span>
+          <h3>Consolidação</h3>
+          <ul>
+            <li>Diário de Presença todas as noites e Minuto de Agradecimento para encerrar o dia.</li>
+            <li>No dia 21, releia as anotações e identifique 2 ou 3 padrões que se repetiram.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="regras">Não busque perfeição, busque consistência: um dia esquecido não estraga o processo, e 3 minutos por prática já é suficiente para gerar mudança.</p>
+    </div>
+  </section>
+
+  <!-- SUMÁRIO -->
+  <section class="sumario">
+    <div class="wrap estreito">
+      <span class="eyebrow">Sumário</span>
+      <h2>O que tem dentro</h2>
+      <ol>
+        <li><b>Introdução:</b> a vida que passa sem você</li>
+        <li><b>Capítulo 1:</b> o que é viver no piloto automático</li>
+        <li><b>Capítulo 2:</b> a ciência por trás do automático</li>
+        <li><b>Capítulo 3:</b> os 5 sinais de desconexão</li>
+        <li><b>Capítulo 4:</b> os 4 pilares da inteligência emocional</li>
+        <li><b>Capítulo 5:</b> ferramenta, o Mapa das Emoções</li>
+        <li><b>Capítulo 6:</b> ferramenta, a Pausa Consciente de 90 segundos</li>
+        <li><b>Capítulo 7:</b> ferramenta, o Diário de Presença</li>
+        <li><b>Capítulo 8:</b> ferramenta, o Minuto de Agradecimento</li>
+        <li><b>Capítulo 9:</b> raiva sem piloto automático</li>
+        <li><b>Capítulo 10:</b> ansiedade sem piloto automático</li>
+        <li><b>Capítulo 11:</b> tristeza sem piloto automático</li>
+        <li><b>Capítulo 12:</b> o plano de 21 dias para sair do automático</li>
+        <li><b>Checklist</b> dos 21 dias</li>
+        <li><b>Conclusão:</b> o próximo passo é uma escolha</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- AUTORA -->
+  <section class="autora">
+    <div class="wrap">
+      <img src="foto-vanessa_2.jpg" alt="Foto de Vanessa Berton" width="800" height="800">
+      <div>
+        <span class="eyebrow">Sobre a autora</span>
+        <h2>Vanessa Berton dos Santos</h2>
+        <p>Especialista em desenvolvimento humano. Nasci com uma malformação que exigiu diversas cirurgias e cresci enfrentando travas físicas e psicológicas. Foi na busca por respostas que descobri o poder do autoconhecimento.</p>
+        <p>Em 2019, comecei a mergulhar nos estudos sobre desenvolvimento humano. Ao longo de sete anos, me formei em Coaching Criacional e em Matriz Humana, além de passar por diversos outros cursos de desenvolvimento pessoal.</p>
+        <p>Hoje, dedico meu trabalho a ajudar outras pessoas a saírem do piloto automático para viverem com mais presença.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA FINAL -->
+  <section class="oferta-final" id="comprar">
+    <div class="wrap">
+      <div class="caixa">
+        <span class="eyebrow">Ebook</span>
+        <h2>Do piloto automático à presença</h2>
+        <ul>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>49 páginas em PDF, para ler no celular, no computador ou imprimir</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>4 ferramentas práticas e um resumo para consultar sempre</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Plano de 21 dias com checklist</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Acesso logo após a confirmação do pagamento</li>
+        </ul>
+        <div class="preco">R$ 37</div>
+        <!-- EDITAR: link do checkout da Hotmart -->
+        <a class="botao" href="#" target="_blank" rel="noopener noreferrer">Quero o ebook</a>
+        <div class="selo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          Compra segura pela Hotmart, com garantia de reembolso.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="faq" style="padding-top:0">
+    <div class="wrap estreito">
+      <h2>Dúvidas frequentes</h2>
+      <details>
+        <summary>Como recebo o ebook?</summary>
+        <p>A compra é feita pela Hotmart. Depois da confirmação do pagamento, você recebe por e-mail o acesso para baixar o arquivo em PDF.</p>
+      </details>
+      <details>
+        <summary>Quais formas de pagamento são aceitas?</summary>
+        <p>As formas disponíveis no checkout da Hotmart, como cartão de crédito e Pix.</p>
+      </details>
+      <details>
+        <summary>E se eu não gostar?</summary>
+        <p>A compra tem garantia de reembolso pela Hotmart. Dentro do prazo de garantia, você pede o reembolso direto na plataforma.</p>
+      </details>
+      <details>
+        <summary>Preciso de muito tempo livre para aplicar?</summary>
+        <p>Não. As práticas levam de 1 a 3 minutos, e o plano de 21 dias foi pensado para caber numa rotina corrida.</p>
+      </details>
+      <details>
+        <summary>O ebook substitui acompanhamento psicológico?</summary>
+        <p>Não. Este ebook é uma ferramenta de autoconhecimento e desenvolvimento pessoal e não configura atendimento psicológico, terapêutico ou qualquer forma de tratamento de saúde mental. Em casos de sofrimento emocional persistente, procure um psicólogo ou médico.</p>
+      </details>
+      <p class="aviso">Este ebook é uma ferramenta de autoconhecimento e desenvolvimento pessoal e não substitui o cuidado de um profissional de saúde.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Vanessa Berton dos Santos</span>
+    <a href="https://www.instagram.com/vanessabertonn/" target="_blank" rel="noopener noreferrer">@vanessabertonn</a>
+  </div>
+</footer>
+
+</body>
+</html>
